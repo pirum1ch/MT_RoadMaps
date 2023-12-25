@@ -17,10 +17,10 @@ public class RouteMaps implements Callable<String> {
     public String call() {
         String string = generateRoute("RLRFR", 100);
 
-        /*Еслb нужно посмотреть имя потока в котором сформирован маршрут, количестdо вхождений R и саму сформированную строук
+        /*
+        Если нужно посмотреть имя потока в котором сформирован маршрут, количестdо вхождений R и саму сформированную строук
         - можно раскомментить строки:
          */
-
 //        long countOfR = string.chars().filter(x -> x == 'R').count();
 //        System.out.println(Thread.currentThread().getName() + " " + countOfR + " " + string);
         return string;
